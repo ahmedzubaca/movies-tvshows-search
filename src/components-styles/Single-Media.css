@@ -1,0 +1,130 @@
+.encompassingDivPoster {
+  display: grid;
+  grid-template-columns: 1fr 1fr;    
+  grid-template-areas: 
+      "button button"
+      "image info";
+  height: 95vh;  
+  padding: 0 1vw;        
+  box-shadow: -1px 3px 18px -4px rgba(0,0,0,0.75);  
+}
+.encompassingDivTrailer {
+  display: grid;
+  grid-template-columns: 1fr;  
+  grid-template-areas:     
+      "button"
+      "image"
+      "info";      
+  padding: 0 1vw;             
+  box-shadow: -1px 3px 18px -4px rgba(0,0,0,0.75);                      
+}
+.backButtonDiv {
+  grid-area: button;
+  justify-self: start;
+  margin: 1vw 0;
+}
+.trailerDiv {
+  grid-area: image;  
+}
+.singleImgDiv {
+  grid-area: image;  
+  height: 80vh;               
+}
+.titleAndOverviewDiv {
+  grid-area: info;
+  padding: 0 3vh                    
+}
+.trailerAlone {   
+  width: 100%;
+  height: 70vh;  
+}
+.singleImgAlone { 
+  display: grid;
+  width: 100%;    
+  max-height: 80vh;  
+}
+.backButton {
+  min-height: 5px;
+  min-width: 20px;
+  font-size: 0.7em;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+} 
+
+.titleAloneDiv {
+  font-size: larger;
+  font-weight: 800;
+  text-align: center;  
+}
+
+.overviewAlone {
+  font-size: large;   
+}
+
+@media only screen and (max-width: 1000px) {
+  .singleImgDiv {
+    grid-area: image;   
+    height: 80vh;               
+  } 
+  .titleAloneDiv {
+    font-size: large;    
+  }
+  .singleImgAlone {     
+    height: 80vh; 
+  }
+}
+@media only screen and (max-width: 700px) {
+  .encompassingDivPoster {
+    display: grid;
+    grid-template-columns: 1fr;    
+    grid-template-areas:
+        "button" 
+        "image"
+        "info" ;
+    padding: 0 5%;                     
+  }
+  .titleAndOverviewDiv {    
+    padding: 0;
+    overflow: scroll;                    
+  }
+  .singleImgDiv {    
+    height: 65vh;               
+  }
+  .singleImgAlone {        
+    height: 65vh;    
+  }  
+}
+
+@media only screen and (max-width: 600px) {
+  .encompassingDivPoster {
+    display: grid;
+    grid-template-columns: 1fr;    
+    grid-template-areas:
+        "button" 
+        "image"
+        "info" ;                   
+  }
+  .singleImgDiv {        
+    max-height: 80vh;        
+  }
+  .backButton {    
+    font-size: 0.5em;
+  } 
+  .singleImgAlone {        
+    max-height: 80vh;    
+  }
+  .titleAndOverviewDiv {    
+    padding: 0;
+    overflow: scroll;                    
+  }
+  .titleAloneDiv {
+    font-size: large;
+    font-weight: 600;                
+  }
+  .overviewAlone {    
+    font-size: medium;    
+  }   
+}

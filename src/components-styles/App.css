@@ -1,0 +1,21 @@
+.appContainerDiv {
+  display: grid;  
+  grid-template-rows: auto; 
+  padding: 2vh 10vw 2vh 15vw;
+  background-color:whitesmoke;
+  row-gap: 2vh;   
+}
+
+@media only screen and (max-width:1000px) { 
+  .appContainerDiv {    
+    padding: 2vh 5vw;    
+    row-gap: 1vw;     
+  }
+}
+
+@media only screen and (max-width:600px) { 
+  .appContainerDiv {    
+    padding: 1vh 2vw;    
+    row-gap: 1vh;     
+  }
+}

@@ -1,0 +1,51 @@
+.imgAndTitleDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;   
+  grid-gap: 3vh 2vw;    
+  cursor: pointer;  
+}
+
+.imgAlone {
+  display: grid;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  align-self: end;        
+}
+
+.titleAlone {
+  display: grid;
+  width: 100%;
+  height: auto;
+  min-height: 2.5em;
+  background-color: khaki;    
+  place-content: center;
+  text-align: center;
+  font-size: medium;
+  font-weight: 600;     
+}
+
+@media only screen and (max-width: 1000px) {
+  .titleAlone {    
+    font-size: small;
+    font-weight: 550;     
+  }
+}
+
+@media only screen and (max-width: 600px) {  
+  .imgAndTitleDiv {    
+    grid-template-columns: 1fr 1fr;    
+    grid-gap: 2vh 3vw;             
+  }
+  
+  .imgAlone {
+    width: 100%;
+    height: auto;
+    margin: 0;        
+  }
+  
+  .titleAlone {    
+    font-size: small;        
+    font-weight: 550;            
+  } 
+}

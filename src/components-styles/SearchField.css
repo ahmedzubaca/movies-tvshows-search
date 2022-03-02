@@ -1,0 +1,67 @@
+.buttonsAndInputDiv {
+  display: grid;   
+  row-gap: 2vh;    
+}
+
+.movieButton {
+  height: 2.2em;
+  width: 8vw;
+  border-radius: 10px 0 0 10px;
+  font-size: 1.2vw;
+  background-color: rgba(228, 225, 225, 0.904);
+}
+
+.tvButton {
+  height: 2.2em;
+  width: 8vw;
+  border-radius: 0 10px 10px 0;
+  font-size: 1.2vw;
+  background-color: rgba(228, 225, 225, 0.904);
+}
+
+.activeButton {
+  background-color: rgb(181, 181, 196);
+  outline: none;
+}
+
+.inputField {  
+  height: 2.5em;
+  margin-bottom: 2vh;
+}
+
+@media only screen and (max-width: 1000px) {
+  
+  .movieButton {
+    height: 2em;
+    width: 10vw;
+    border-radius: 10px 0 0 10px;
+    font-size: 1.5vw;
+  }
+  
+  .tvButton {
+    height: 2em;
+    width: 10vw;
+    border-radius: 0 10px 10px 0;
+    font-size: 1.5vw;
+  }  
+  
+  .inputField {
+    height: 1.5em;     
+  }
+}
+@media only screen and (max-width: 600px) {
+  
+  .movieButton {
+    height: 2em;
+    width: 15vw;
+    border-radius: 10px 0 0 10px;
+    font-size: 2vw;
+}
+
+  .tvButton {
+    height: 2em;
+    width: 15vw;
+    border-radius: 0 10px 10px 0;
+    font-size: 2vw;
+  }
+}
